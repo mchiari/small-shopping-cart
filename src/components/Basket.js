@@ -13,7 +13,7 @@ export default function Basket(props){
                 {cartItems.length === 0 && <div>Cart it Empty</div>}
             </div>
             {cartItems.map((item)=> (
-                <div key={item.id} className='row'>
+                <div key={item.id} className='row center'>
                     <div>{item.name}</div>
                     <div>
                         <button onClick={()=>onAdd(item)} className='add'>+</button>
